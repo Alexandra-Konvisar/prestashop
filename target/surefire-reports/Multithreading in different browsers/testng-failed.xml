@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Multithreading in different browsers]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="by.teachmeskills.testng.AnnotationTransformer"/>
+    <listener class-name="by.teachmeskills.testng.TestListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Tests for Firefox(failed)" verbose="0">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="by.teachmeskills.AccountTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="addAddress"/>
+          <include name="deleteAddress"/>
+        </methods>
+      </class> <!-- by.teachmeskills.AccountTest -->
+      <class name="by.teachmeskills.SearchTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="searchItemByFullName"/>
+        </methods>
+      </class> <!-- by.teachmeskills.SearchTest -->
+    </classes>
+  </test> <!-- Tests for Firefox(failed) -->
+</suite> <!-- Failed suite [Multithreading in different browsers] -->

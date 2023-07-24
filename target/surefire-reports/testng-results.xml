@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="2" ignored="0" total="18" passed="13" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-24T23:13:23 AMT" name="Multithreading in different browsers" finished-at="2023-07-24T23:15:54 AMT" duration-ms="151320">
+    <groups>
+    </groups>
+    <test started-at="2023-07-24T23:13:23 AMT" name="Tests for Firefox" finished-at="2023-07-24T23:14:46 AMT" duration-ms="82868">
+      <class name="by.teachmeskills.AccountTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.AccountTest@19b206ee]" started-at="2023-07-24T23:14:09 AMT" name="setUp" finished-at="2023-07-24T23:14:11 AMT" duration-ms="1902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@e784320]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addAddress()[pri:0, instance:by.teachmeskills.AccountTest@19b206ee]" started-at="2023-07-24T23:14:11 AMT" name="addAddress" finished-at="2023-07-24T23:14:22 AMT" duration-ms="10774" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <select id="id_country" class="form-control" name="id_country"> is not clickable at point (468,851) because another element <html class=""> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [601e2be1-236e-40b5-be4c-c0f0dec2bbac, clickElement {id=3dbc077c-0cdd-4d00-bf9d-8a11d4912f8d}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:40844, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 67018, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:40844/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (601e2be1-236e-40b5-be4c-c0f0dec2bbac)] -> id: id_country]
+Session ID: 601e2be1-236e-40b5-be4c-c0f0dec2bbac]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <select id="id_country" class="form-control" name="id_country"> is not clickable at point (468,851) because another element <html class=""> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [601e2be1-236e-40b5-be4c-c0f0dec2bbac, clickElement {id=3dbc077c-0cdd-4d00-bf9d-8a11d4912f8d}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:40844, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 67018, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:40844/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (601e2be1-236e-40b5-be4c-c0f0dec2bbac)] -> id: id_country]
+Session ID: 601e2be1-236e-40b5-be4c-c0f0dec2bbac
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at by.teachmeskills.page.AccountPage.addNewAddressWithRequiredFields(AccountPage.java:48)
+at by.teachmeskills.AccountTest.addAddress(AccountTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.AccountTest@19b206ee]" started-at="2023-07-24T23:14:22 AMT" name="tearDown" finished-at="2023-07-24T23:14:22 AMT" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.AccountTest@19b206ee]" started-at="2023-07-24T23:14:22 AMT" name="setUp" finished-at="2023-07-24T23:14:24 AMT" duration-ms="2020" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@e784320]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkedOrderHistory()[pri:0, instance:by.teachmeskills.AccountTest@19b206ee]" started-at="2023-07-24T23:14:24 AMT" name="checkedOrderHistory" finished-at="2023-07-24T23:14:34 AMT" duration-ms="9842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkedOrderHistory -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.AccountTest@19b206ee]" started-at="2023-07-24T23:14:34 AMT" name="tearDown" finished-at="2023-07-24T23:14:35 AMT" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.AccountTest@19b206ee]" started-at="2023-07-24T23:14:35 AMT" name="setUp" finished-at="2023-07-24T23:14:37 AMT" duration-ms="2001" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@e784320]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteAddress()[pri:0, instance:by.teachmeskills.AccountTest@19b206ee]" started-at="2023-07-24T23:14:37 AMT" name="deleteAddress" finished-at="2023-07-24T23:14:45 AMT" duration-ms="8557" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <select id="id_country" class="form-control" name="id_country"> is not clickable at point (468,851) because another element <html class=""> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7df27232-ff22-44da-811b-ce35c956e3d6, clickElement {id=77c59ef8-9daa-4584-b81e-e0870ce2b5f2}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:28244, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 67097, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:28244/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (7df27232-ff22-44da-811b-ce35c956e3d6)] -> id: id_country]
+Session ID: 7df27232-ff22-44da-811b-ce35c956e3d6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <select id="id_country" class="form-control" name="id_country"> is not clickable at point (468,851) because another element <html class=""> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7df27232-ff22-44da-811b-ce35c956e3d6, clickElement {id=77c59ef8-9daa-4584-b81e-e0870ce2b5f2}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:28244, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 67097, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:28244/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (7df27232-ff22-44da-811b-ce35c956e3d6)] -> id: id_country]
+Session ID: 7df27232-ff22-44da-811b-ce35c956e3d6
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at by.teachmeskills.page.AccountPage.addNewAddressWithRequiredFields(AccountPage.java:48)
+at by.teachmeskills.AccountTest.deleteAddress(AccountTest.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAddress -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.AccountTest@19b206ee]" started-at="2023-07-24T23:14:45 AMT" name="tearDown" finished-at="2023-07-24T23:14:46 AMT" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- by.teachmeskills.AccountTest -->
+      <class name="by.teachmeskills.SearchTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:23 AMT" name="setUp" finished-at="2023-07-24T23:13:26 AMT" duration-ms="3072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@e784320]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="emptySearch()[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:26 AMT" name="emptySearch" finished-at="2023-07-24T23:13:31 AMT" duration-ms="4563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptySearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:31 AMT" name="tearDown" finished-at="2023-07-24T23:13:31 AMT" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:31 AMT" name="setUp" finished-at="2023-07-24T23:13:33 AMT" duration-ms="2013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@e784320]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchItemByFirstChr()[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:33 AMT" name="searchItemByFirstChr" finished-at="2023-07-24T23:13:38 AMT" duration-ms="4658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItemByFirstChr -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:38 AMT" name="tearDown" finished-at="2023-07-24T23:13:39 AMT" duration-ms="587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:39 AMT" name="setUp" finished-at="2023-07-24T23:13:40 AMT" duration-ms="1903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@e784320]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="searchItemByFullName()[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:40 AMT" name="searchItemByFullName" finished-at="2023-07-24T23:13:45 AMT" duration-ms="5004" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <a class="product-name" href="http://prestashop.qatestlab.com.ua/ru/casual-dresses/3-printed-dress.html?search_query=Printed&results=13"> is not clickable at point (749,853) because another element <html class=""> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f0d67b8c-50a4-4c3e-99a5-d15e78d372a6, clickElement {id=57ad9ff0-e5fe-44a2-bb7d-93668d1d4a2b}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:5923, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 66893, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:5923/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (f0d67b8c-50a4-4c3e-99a5-d15e78d372a6)] -> xpath: //h5[@itemprop='name']//a[@title='Printed Dress']]
+Session ID: f0d67b8c-50a4-4c3e-99a5-d15e78d372a6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a class="product-name" href="http://prestashop.qatestlab.com.ua/ru/casual-dresses/3-printed-dress.html?search_query=Printed&results=13"> is not clickable at point (749,853) because another element <html class=""> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f0d67b8c-50a4-4c3e-99a5-d15e78d372a6, clickElement {id=57ad9ff0-e5fe-44a2-bb7d-93668d1d4a2b}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:5923, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 66893, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:5923/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (f0d67b8c-50a4-4c3e-99a5-d15e78d372a6)] -> xpath: //h5[@itemprop='name']//a[@title='Printed Dress']]
+Session ID: f0d67b8c-50a4-4c3e-99a5-d15e78d372a6
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at by.teachmeskills.page.ProductsPage.searchByFullName(ProductsPage.java:89)
+at by.teachmeskills.SearchTest.searchItemByFullName(SearchTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItemByFullName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:45 AMT" name="tearDown" finished-at="2023-07-24T23:13:46 AMT" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:46 AMT" name="setUp" finished-at="2023-07-24T23:13:48 AMT" duration-ms="2019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@e784320]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="searchItemByFullName()[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:48 AMT" name="searchItemByFullName" finished-at="2023-07-24T23:13:54 AMT" duration-ms="5796" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <a class="product-name" href="http://prestashop.qatestlab.com.ua/ru/casual-dresses/3-printed-dress.html?search_query=Printed&results=13"> is not clickable at point (749,853) because another element <html class=""> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2da75547-6514-478a-8790-29236c19b3b1, clickElement {id=fc8cdd8c-5ea4-4b1a-a2da-a8dce6144aca}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:39400, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 66924, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:39400/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (2da75547-6514-478a-8790-29236c19b3b1)] -> xpath: //h5[@itemprop='name']//a[@title='Printed Dress']]
+Session ID: 2da75547-6514-478a-8790-29236c19b3b1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a class="product-name" href="http://prestashop.qatestlab.com.ua/ru/casual-dresses/3-printed-dress.html?search_query=Printed&results=13"> is not clickable at point (749,853) because another element <html class=""> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2da75547-6514-478a-8790-29236c19b3b1, clickElement {id=fc8cdd8c-5ea4-4b1a-a2da-a8dce6144aca}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:39400, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 66924, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:39400/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (2da75547-6514-478a-8790-29236c19b3b1)] -> xpath: //h5[@itemprop='name']//a[@title='Printed Dress']]
+Session ID: 2da75547-6514-478a-8790-29236c19b3b1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at by.teachmeskills.page.ProductsPage.searchByFullName(ProductsPage.java:89)
+at by.teachmeskills.SearchTest.searchItemByFullName(SearchTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItemByFullName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:54 AMT" name="tearDown" finished-at="2023-07-24T23:13:55 AMT" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:55 AMT" name="setUp" finished-at="2023-07-24T23:13:57 AMT" duration-ms="1990" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@e784320]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchItemByFullName()[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:13:57 AMT" name="searchItemByFullName" finished-at="2023-07-24T23:14:01 AMT" duration-ms="4827" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <a class="product-name" href="http://prestashop.qatestlab.com.ua/ru/casual-dresses/3-printed-dress.html?search_query=Printed&results=13"> is not clickable at point (749,853) because another element <html class=""> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [45cf2cfc-9b9b-4779-8e45-111d32cfbcc6, clickElement {id=06677a33-51b5-448f-9a90-6fb6709db4d4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:24215, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 66942, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:24215/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (45cf2cfc-9b9b-4779-8e45-111d32cfbcc6)] -> xpath: //h5[@itemprop='name']//a[@title='Printed Dress']]
+Session ID: 45cf2cfc-9b9b-4779-8e45-111d32cfbcc6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a class="product-name" href="http://prestashop.qatestlab.com.ua/ru/casual-dresses/3-printed-dress.html?search_query=Printed&results=13"> is not clickable at point (749,853) because another element <html class=""> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [45cf2cfc-9b9b-4779-8e45-111d32cfbcc6, clickElement {id=06677a33-51b5-448f-9a90-6fb6709db4d4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:24215, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 66942, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:24215/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (45cf2cfc-9b9b-4779-8e45-111d32cfbcc6)] -> xpath: //h5[@itemprop='name']//a[@title='Printed Dress']]
+Session ID: 45cf2cfc-9b9b-4779-8e45-111d32cfbcc6
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at by.teachmeskills.page.ProductsPage.searchByFullName(ProductsPage.java:89)
+at by.teachmeskills.SearchTest.searchItemByFullName(SearchTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItemByFullName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:14:02 AMT" name="tearDown" finished-at="2023-07-24T23:14:02 AMT" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:14:02 AMT" name="setUp" finished-at="2023-07-24T23:14:04 AMT" duration-ms="2008" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@e784320]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="wrongSearch()[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:14:04 AMT" name="wrongSearch" finished-at="2023-07-24T23:14:08 AMT" duration-ms="4212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.SearchTest@79d82f66]" started-at="2023-07-24T23:14:08 AMT" name="tearDown" finished-at="2023-07-24T23:14:09 AMT" duration-ms="582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- by.teachmeskills.SearchTest -->
+    </test> <!-- Tests for Firefox -->
+    <test started-at="2023-07-24T23:13:23 AMT" name="Tests for Chrome" finished-at="2023-07-24T23:15:54 AMT" duration-ms="151320">
+      <class name="by.teachmeskills.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:13:23 AMT" name="setUp" finished-at="2023-07-24T23:13:26 AMT" duration-ms="3241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5568c66f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginValidUser()[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:13:26 AMT" name="loginValidUser" finished-at="2023-07-24T23:13:34 AMT" duration-ms="7895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValidUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:13:34 AMT" name="tearDown" finished-at="2023-07-24T23:13:34 AMT" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:13:34 AMT" name="setUp" finished-at="2023-07-24T23:13:36 AMT" duration-ms="2202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5568c66f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithWrongEmail()[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:13:36 AMT" name="loginWithWrongEmail" finished-at="2023-07-24T23:13:45 AMT" duration-ms="8149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithWrongEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:13:45 AMT" name="tearDown" finished-at="2023-07-24T23:13:45 AMT" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:13:45 AMT" name="setUp" finished-at="2023-07-24T23:13:47 AMT" duration-ms="2164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5568c66f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithWrongPassword()[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:13:47 AMT" name="loginWithWrongPassword" finished-at="2023-07-24T23:13:54 AMT" duration-ms="7546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithWrongPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:13:54 AMT" name="tearDown" finished-at="2023-07-24T23:13:55 AMT" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:13:55 AMT" name="setUp" finished-at="2023-07-24T23:13:57 AMT" duration-ms="2301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5568c66f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithoutData()[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:13:57 AMT" name="loginWithoutData" finished-at="2023-07-24T23:14:02 AMT" duration-ms="5166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithoutData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:14:02 AMT" name="tearDown" finished-at="2023-07-24T23:14:02 AMT" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:14:02 AMT" name="setUp" finished-at="2023-07-24T23:14:04 AMT" duration-ms="2134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5568c66f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithoutPassword()[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:14:04 AMT" name="loginWithoutPassword" finished-at="2023-07-24T23:14:10 AMT" duration-ms="5637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithoutPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:14:10 AMT" name="tearDown" finished-at="2023-07-24T23:14:10 AMT" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:14:10 AMT" name="setUp" finished-at="2023-07-24T23:14:12 AMT" duration-ms="2126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5568c66f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logoutTest()[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:14:12 AMT" name="logoutTest" finished-at="2023-07-24T23:14:23 AMT" duration-ms="10480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.LoginTest@abbe000]" started-at="2023-07-24T23:14:23 AMT" name="tearDown" finished-at="2023-07-24T23:14:23 AMT" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- by.teachmeskills.LoginTest -->
+      <class name="by.teachmeskills.CartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.CartTest@24a2e565]" started-at="2023-07-24T23:14:23 AMT" name="setUp" finished-at="2023-07-24T23:14:25 AMT" duration-ms="2143" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5568c66f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkedAddingItemToCart()[pri:0, instance:by.teachmeskills.CartTest@24a2e565]" started-at="2023-07-24T23:14:25 AMT" name="checkedAddingItemToCart" finished-at="2023-07-24T23:14:43 AMT" duration-ms="18446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkedAddingItemToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.CartTest@24a2e565]" started-at="2023-07-24T23:14:43 AMT" name="tearDown" finished-at="2023-07-24T23:14:43 AMT" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.CartTest@24a2e565]" started-at="2023-07-24T23:14:43 AMT" name="setUp" finished-at="2023-07-24T23:14:46 AMT" duration-ms="2321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5568c66f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="payByBankWire()[pri:0, instance:by.teachmeskills.CartTest@24a2e565]" started-at="2023-07-24T23:14:46 AMT" name="payByBankWire" finished-at="2023-07-24T23:15:18 AMT" duration-ms="32222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- payByBankWire -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.CartTest@24a2e565]" started-at="2023-07-24T23:15:18 AMT" name="tearDown" finished-at="2023-07-24T23:15:18 AMT" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:by.teachmeskills.CartTest@24a2e565]" started-at="2023-07-24T23:15:18 AMT" name="setUp" finished-at="2023-07-24T23:15:21 AMT" duration-ms="2490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5568c66f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="payByCheck()[pri:0, instance:by.teachmeskills.CartTest@24a2e565]" started-at="2023-07-24T23:15:21 AMT" name="payByCheck" finished-at="2023-07-24T23:15:54 AMT" duration-ms="33602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- payByCheck -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:by.teachmeskills.CartTest@24a2e565]" started-at="2023-07-24T23:15:54 AMT" name="tearDown" finished-at="2023-07-24T23:15:54 AMT" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- by.teachmeskills.CartTest -->
+    </test> <!-- Tests for Chrome -->
+  </suite> <!-- Multithreading in different browsers -->
+</testng-results>

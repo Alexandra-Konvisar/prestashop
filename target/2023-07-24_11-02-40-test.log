@@ -1,0 +1,15 @@
+2023-07-24 23:02:41.331 INFO [main] [org.testng.internal.Utils] - [TestNG] Running:
+  /Users/alexandra/Library/Caches/JetBrains/IdeaIC2022.1/temp-testng-customsuite.xml
+
+2023-07-24 23:02:41.371 INFO [main] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:02:41.585 INFO [main] [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+2023-07-24 23:02:41.596 INFO [main] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as /Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver
+2023-07-24 23:02:49.639 INFO [main] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:02:49.645 INFO [main] [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+2023-07-24 23:02:49.647 INFO [main] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as /Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver
+2023-07-24 23:02:57.279 INFO [main] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:02:57.287 INFO [main] [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+2023-07-24 23:02:57.289 INFO [main] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as /Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver
+2023-07-24 23:03:05.108 INFO [main] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:03:05.112 INFO [main] [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+2023-07-24 23:03:05.113 INFO [main] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as /Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver

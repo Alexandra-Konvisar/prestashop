@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Multithreading_in_different_browsers" class="navigator-link">
+              <span class="suite-name border-failed">Multithreading in different browsers</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Multithreading_in_different_browsers" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Multithreading_in_different_browsers" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Multithreading_in_different_browsers" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Multithreading_in_different_browsers" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Multithreading_in_different_browsers" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Multithreading_in_different_browsers" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Multithreading_in_different_browsers" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 3 failed,  2 skipped,  13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Multithreading_in_different_browsers" class="hide-methods failed suite-Multithreading_in_different_browsers"> (hide)</a> <!-- hide-methods failed suite-Multithreading_in_different_browsers -->
+                      <a href="#" panel-name="suite-Multithreading_in_different_browsers" class="show-methods failed suite-Multithreading_in_different_browsers"> (show)</a> <!-- show-methods failed suite-Multithreading_in_different_browsers -->
+                    </span>
+                    <div class="method-list-content failed suite-Multithreading_in_different_browsers">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.AccountTest" class="method navigator-link" hash-for-method="addAddress">addAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.AccountTest" class="method navigator-link" hash-for-method="deleteAddress">deleteAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.SearchTest" class="method navigator-link" hash-for-method="searchItemByFullName">searchItemByFullName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Multithreading_in_different_browsers -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Multithreading_in_different_browsers" class="hide-methods skipped suite-Multithreading_in_different_browsers"> (hide)</a> <!-- hide-methods skipped suite-Multithreading_in_different_browsers -->
+                      <a href="#" panel-name="suite-Multithreading_in_different_browsers" class="show-methods skipped suite-Multithreading_in_different_browsers"> (show)</a> <!-- show-methods skipped suite-Multithreading_in_different_browsers -->
+                    </span>
+                    <div class="method-list-content skipped suite-Multithreading_in_different_browsers">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.SearchTest" class="method navigator-link" hash-for-method="searchItemByFullName">searchItemByFullName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.SearchTest" class="method navigator-link" hash-for-method="searchItemByFullName">searchItemByFullName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Multithreading_in_different_browsers -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Multithreading_in_different_browsers" class="hide-methods passed suite-Multithreading_in_different_browsers"> (hide)</a> <!-- hide-methods passed suite-Multithreading_in_different_browsers -->
+                      <a href="#" panel-name="suite-Multithreading_in_different_browsers" class="show-methods passed suite-Multithreading_in_different_browsers"> (show)</a> <!-- show-methods passed suite-Multithreading_in_different_browsers -->
+                    </span>
+                    <div class="method-list-content passed suite-Multithreading_in_different_browsers">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.CartTest" class="method navigator-link" hash-for-method="checkedAddingItemToCart">checkedAddingItemToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.AccountTest" class="method navigator-link" hash-for-method="checkedOrderHistory">checkedOrderHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.SearchTest" class="method navigator-link" hash-for-method="emptySearch">emptySearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.LoginTest" class="method navigator-link" hash-for-method="loginValidUser">loginValidUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.LoginTest" class="method navigator-link" hash-for-method="loginWithWrongEmail">loginWithWrongEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.LoginTest" class="method navigator-link" hash-for-method="loginWithWrongPassword">loginWithWrongPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.LoginTest" class="method navigator-link" hash-for-method="loginWithoutData">loginWithoutData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.LoginTest" class="method navigator-link" hash-for-method="loginWithoutPassword">loginWithoutPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.LoginTest" class="method navigator-link" hash-for-method="logoutTest">logoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.CartTest" class="method navigator-link" hash-for-method="payByBankWire">payByBankWire</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.CartTest" class="method navigator-link" hash-for-method="payByCheck">payByCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.SearchTest" class="method navigator-link" hash-for-method="searchItemByFirstChr">searchItemByFirstChr</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Multithreading_in_different_browsers" title="by.teachmeskills.SearchTest" class="method navigator-link" hash-for-method="wrongSearch">wrongSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Multithreading_in_different_browsers -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Multithreading_in_different_browsers" class="panel Multithreading_in_different_browsers">
+          <div class="suite-Multithreading_in_different_browsers-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">by.teachmeskills.AccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addAddress">
+                  </a> <!-- addAddress -->
+                  <span class="method-name">addAddress</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;select id=&quot;id_country&quot; class=&quot;form-control&quot; name=&quot;id_country&quot;&gt; is not clickable at point (468,851) because another element &lt;html class=&quot;&quot;&gt; obscures it
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.4.1&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [601e2be1-236e-40b5-be4c-c0f0dec2bbac, clickElement {id=3dbc077c-0cdd-4d00-bf9d-8a11d4912f8d}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:40844, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 67018, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:40844/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (601e2be1-236e-40b5-be4c-c0f0dec2bbac)] -&gt; id: id_country]
+Session ID: 601e2be1-236e-40b5-be4c-c0f0dec2bbac
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at by.teachmeskills.page.AccountPage.addNewAddressWithRequiredFields(AccountPage.java:48)
+	at by.teachmeskills.AccountTest.addAddress(AccountTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteAddress">
+                  </a> <!-- deleteAddress -->
+                  <span class="method-name">deleteAddress</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;select id=&quot;id_country&quot; class=&quot;form-control&quot; name=&quot;id_country&quot;&gt; is not clickable at point (468,851) because another element &lt;html class=&quot;&quot;&gt; obscures it
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.4.1&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7df27232-ff22-44da-811b-ce35c956e3d6, clickElement {id=77c59ef8-9daa-4584-b81e-e0870ce2b5f2}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:28244, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 67097, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:28244/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (7df27232-ff22-44da-811b-ce35c956e3d6)] -&gt; id: id_country]
+Session ID: 7df27232-ff22-44da-811b-ce35c956e3d6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at by.teachmeskills.page.AccountPage.addNewAddressWithRequiredFields(AccountPage.java:48)
+	at by.teachmeskills.AccountTest.deleteAddress(AccountTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Multithreading_in_different_browsers-class-failed -->
+          <div class="suite-Multithreading_in_different_browsers-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">by.teachmeskills.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItemByFullName">
+                  </a> <!-- searchItemByFullName -->
+                  <span class="method-name">searchItemByFullName</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;product-name&quot; href=&quot;http://prestashop.qatestlab.com.ua/ru/casual-dresses/3-printed-dress.html?search_query=Printed&amp;results=13&quot;&gt; is not clickable at point (749,853) because another element &lt;html class=&quot;&quot;&gt; obscures it
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.4.1&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [45cf2cfc-9b9b-4779-8e45-111d32cfbcc6, clickElement {id=06677a33-51b5-448f-9a90-6fb6709db4d4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:24215, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 66942, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:24215/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (45cf2cfc-9b9b-4779-8e45-111d32cfbcc6)] -&gt; xpath: //h5[@itemprop=&apos;name&apos;]//a[@title=&apos;Printed Dress&apos;]]
+Session ID: 45cf2cfc-9b9b-4779-8e45-111d32cfbcc6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at by.teachmeskills.page.ProductsPage.searchByFullName(ProductsPage.java:89)
+	at by.teachmeskills.SearchTest.searchItemByFullName(SearchTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Multithreading_in_different_browsers-class-failed -->
+          <div class="suite-Multithreading_in_different_browsers-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">by.teachmeskills.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItemByFullName">
+                  </a> <!-- searchItemByFullName -->
+                  <span class="method-name">searchItemByFullName</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;product-name&quot; href=&quot;http://prestashop.qatestlab.com.ua/ru/casual-dresses/3-printed-dress.html?search_query=Printed&amp;results=13&quot;&gt; is not clickable at point (749,853) because another element &lt;html class=&quot;&quot;&gt; obscures it
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.4.1&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f0d67b8c-50a4-4c3e-99a5-d15e78d372a6, clickElement {id=57ad9ff0-e5fe-44a2-bb7d-93668d1d4a2b}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:5923, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 66893, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:5923/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (f0d67b8c-50a4-4c3e-99a5-d15e78d372a6)] -&gt; xpath: //h5[@itemprop=&apos;name&apos;]//a[@title=&apos;Printed Dress&apos;]]
+Session ID: f0d67b8c-50a4-4c3e-99a5-d15e78d372a6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at by.teachmeskills.page.ProductsPage.searchByFullName(ProductsPage.java:89)
+	at by.teachmeskills.SearchTest.searchItemByFullName(SearchTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItemByFullName">
+                  </a> <!-- searchItemByFullName -->
+                  <span class="method-name">searchItemByFullName</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;product-name&quot; href=&quot;http://prestashop.qatestlab.com.ua/ru/casual-dresses/3-printed-dress.html?search_query=Printed&amp;results=13&quot;&gt; is not clickable at point (749,853) because another element &lt;html class=&quot;&quot;&gt; obscures it
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.4.1&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2da75547-6514-478a-8790-29236c19b3b1, clickElement {id=fc8cdd8c-5ea4-4b1a-a2da-a8dce6144aca}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:39400, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 66924, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:39400/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (2da75547-6514-478a-8790-29236c19b3b1)] -&gt; xpath: //h5[@itemprop=&apos;name&apos;]//a[@title=&apos;Printed Dress&apos;]]
+Session ID: 2da75547-6514-478a-8790-29236c19b3b1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at by.teachmeskills.page.ProductsPage.searchByFullName(ProductsPage.java:89)
+	at by.teachmeskills.SearchTest.searchItemByFullName(SearchTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Multithreading_in_different_browsers-class-skipped -->
+          <div class="suite-Multithreading_in_different_browsers-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">by.teachmeskills.AccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkedOrderHistory">
+                  </a> <!-- checkedOrderHistory -->
+                  <span class="method-name">checkedOrderHistory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Multithreading_in_different_browsers-class-passed -->
+          <div class="suite-Multithreading_in_different_browsers-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">by.teachmeskills.CartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkedAddingItemToCart">
+                  </a> <!-- checkedAddingItemToCart -->
+                  <span class="method-name">checkedAddingItemToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="payByBankWire">
+                  </a> <!-- payByBankWire -->
+                  <span class="method-name">payByBankWire</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="payByCheck">
+                  </a> <!-- payByCheck -->
+                  <span class="method-name">payByCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Multithreading_in_different_browsers-class-passed -->
+          <div class="suite-Multithreading_in_different_browsers-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">by.teachmeskills.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginValidUser">
+                  </a> <!-- loginValidUser -->
+                  <span class="method-name">loginValidUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithWrongEmail">
+                  </a> <!-- loginWithWrongEmail -->
+                  <span class="method-name">loginWithWrongEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithWrongPassword">
+                  </a> <!-- loginWithWrongPassword -->
+                  <span class="method-name">loginWithWrongPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithoutData">
+                  </a> <!-- loginWithoutData -->
+                  <span class="method-name">loginWithoutData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithoutPassword">
+                  </a> <!-- loginWithoutPassword -->
+                  <span class="method-name">loginWithoutPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutTest">
+                  </a> <!-- logoutTest -->
+                  <span class="method-name">logoutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Multithreading_in_different_browsers-class-passed -->
+          <div class="suite-Multithreading_in_different_browsers-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">by.teachmeskills.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="emptySearch">
+                  </a> <!-- emptySearch -->
+                  <span class="method-name">emptySearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItemByFirstChr">
+                  </a> <!-- searchItemByFirstChr -->
+                  <span class="method-name">searchItemByFirstChr</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrongSearch">
+                  </a> <!-- wrongSearch -->
+                  <span class="method-name">wrongSearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Multithreading_in_different_browsers-class-passed -->
+        </div> <!-- panel Multithreading_in_different_browsers -->
+        <div panel-name="test-xml-Multithreading_in_different_browsers" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/alexandra/IdeaProjects/Prestashop/src/test/resources/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Multithreading in different browsers&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;by.teachmeskills.testng.AnnotationTransformer&quot;/&gt;
+    &lt;listener class-name=&quot;by.teachmeskills.testng.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Tests for Chrome&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;by.teachmeskills.LoginTest&quot;/&gt;
+      &lt;class name=&quot;by.teachmeskills.CartTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Tests for Chrome --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Tests for Firefox&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;by.teachmeskills.SearchTest&quot;/&gt;
+      &lt;class name=&quot;by.teachmeskills.AccountTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Tests for Firefox --&gt;
+&lt;/suite&gt; &lt;!-- Multithreading in different browsers --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Multithreading_in_different_browsers" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Multithreading in different browsers</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Tests for Chrome (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Tests for Firefox (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Multithreading_in_different_browsers" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Multithreading in different browsers</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Multithreading_in_different_browsers" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Multithreading in different browsers</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Multithreading_in_different_browsers');
+function tableData_Multithreading_in_different_browsers() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'payByCheck')
+data.setCell(0, 2, 'by.teachmeskills.CartTest')
+data.setCell(0, 3, 33602);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'payByBankWire')
+data.setCell(1, 2, 'by.teachmeskills.CartTest')
+data.setCell(1, 3, 32222);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkedAddingItemToCart')
+data.setCell(2, 2, 'by.teachmeskills.CartTest')
+data.setCell(2, 3, 18446);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addAddress')
+data.setCell(3, 2, 'by.teachmeskills.AccountTest')
+data.setCell(3, 3, 10774);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'logoutTest')
+data.setCell(4, 2, 'by.teachmeskills.LoginTest')
+data.setCell(4, 3, 10480);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkedOrderHistory')
+data.setCell(5, 2, 'by.teachmeskills.AccountTest')
+data.setCell(5, 3, 9842);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'deleteAddress')
+data.setCell(6, 2, 'by.teachmeskills.AccountTest')
+data.setCell(6, 3, 8557);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginWithWrongEmail')
+data.setCell(7, 2, 'by.teachmeskills.LoginTest')
+data.setCell(7, 3, 8149);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginValidUser')
+data.setCell(8, 2, 'by.teachmeskills.LoginTest')
+data.setCell(8, 3, 7895);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginWithWrongPassword')
+data.setCell(9, 2, 'by.teachmeskills.LoginTest')
+data.setCell(9, 3, 7546);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'searchItemByFullName')
+data.setCell(10, 2, 'by.teachmeskills.SearchTest')
+data.setCell(10, 3, 5796);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginWithoutPassword')
+data.setCell(11, 2, 'by.teachmeskills.LoginTest')
+data.setCell(11, 3, 5637);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'loginWithoutData')
+data.setCell(12, 2, 'by.teachmeskills.LoginTest')
+data.setCell(12, 3, 5166);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'searchItemByFullName')
+data.setCell(13, 2, 'by.teachmeskills.SearchTest')
+data.setCell(13, 3, 5004);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'searchItemByFullName')
+data.setCell(14, 2, 'by.teachmeskills.SearchTest')
+data.setCell(14, 3, 4827);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'searchItemByFirstChr')
+data.setCell(15, 2, 'by.teachmeskills.SearchTest')
+data.setCell(15, 3, 4658);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'emptySearch')
+data.setCell(16, 2, 'by.teachmeskills.SearchTest')
+data.setCell(16, 3, 4563);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'wrongSearch')
+data.setCell(17, 2, 'by.teachmeskills.SearchTest')
+data.setCell(17, 3, 4212);
+window.suiteTableData['Multithreading_in_different_browsers']= { tableData: data, tableDiv: 'times-div-Multithreading_in_different_browsers'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Multithreading_in_different_browsers">
+              </div> <!-- times-div-Multithreading_in_different_browsers -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Multithreading_in_different_browsers" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Multithreading in different browsers</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Multithreading_in_different_browsers" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Multithreading_in_different_browsers" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@5568c66f)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox, org.testng.TestRunner@e784320)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">emptySearch</span>
+                <span class="method-start">3121 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginValidUser</span>
+                <span class="method-start">3242 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7690 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox, org.testng.TestRunner@e784320)</span>
+                <span class="method-start">8281 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchItemByFirstChr</span>
+                <span class="method-start">10295 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11138 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@5568c66f)</span>
+                <span class="method-start">11244 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithWrongEmail</span>
+                <span class="method-start">13446 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14954 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox, org.testng.TestRunner@e784320)</span>
+                <span class="method-start">15542 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchItemByFullName</span>
+                <span class="method-start">17445 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21596 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@5568c66f)</span>
+                <span class="method-start">21703 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22451 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox, org.testng.TestRunner@e784320)</span>
+                <span class="method-start">23101 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginWithWrongPassword</span>
+                <span class="method-start">23868 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.SearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchItemByFullName</span>
+                <span class="method-start">25120 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30918 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31414 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox, org.testng.TestRunner@e784320)</span>
+                <span class="method-start">31530 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@5568c66f)</span>
+                <span class="method-start">31553 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.SearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchItemByFullName</span>
+                <span class="method-start">33521 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginWithoutData</span>
+                <span class="method-start">33855 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38537 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39022 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox, org.testng.TestRunner@e784320)</span>
+                <span class="method-start">39128 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@5568c66f)</span>
+                <span class="method-start">39136 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.SearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">wrongSearch</span>
+                <span class="method-start">41136 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginWithoutPassword</span>
+                <span class="method-start">41271 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">45349 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox, org.testng.TestRunner@e784320)</span>
+                <span class="method-start">45932 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">46909 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@5568c66f)</span>
+                <span class="method-start">47021 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.AccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addAddress</span>
+                <span class="method-start">47835 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">logoutTest</span>
+                <span class="method-start">49147 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">58695 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox, org.testng.TestRunner@e784320)</span>
+                <span class="method-start">59181 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">59628 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.CartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@5568c66f)</span>
+                <span class="method-start">59740 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.AccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkedOrderHistory</span>
+                <span class="method-start">61202 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.CartTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkedAddingItemToCart</span>
+                <span class="method-start">61884 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">71044 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox, org.testng.TestRunner@e784320)</span>
+                <span class="method-start">71534 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteAddress</span>
+                <span class="method-start">73535 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.CartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">80331 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@5568c66f)</span>
+                <span class="method-start">80436 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">82190 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.teachmeskills.CartTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">payByBankWire</span>
+                <span class="method-start">82757 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">114980 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@5568c66f)</span>
+                <span class="method-start">115092 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">payByCheck</span>
+                <span class="method-start">117582 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">151185 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="152.57" tests="18" errors="0" skipped="2" failures="3">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="webdriver.chrome.driver" value="/Users/alexandra/.cache/selenium/chromedriver/mac-arm64/114.0.5735.90/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/alexandra/IdeaProjects/Prestashop/target/test-classes:/Users/alexandra/IdeaProjects/Prestashop/target/classes:/Users/alexandra/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/alexandra/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/alexandra/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.1/selenium-java-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.1/selenium-api-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.1/selenium-chrome-driver-4.8.1.jar:/Users/alexandra/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/alexandra/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/alexandra/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/alexandra/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/alexandra/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/alexandra/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/alexandra/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/alexandra/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/alexandra/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/alexandra/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.1/selenium-chromium-driver-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.1/selenium-json-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v108/4.8.1/selenium-devtools-v108-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.1/selenium-devtools-v109-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.1/selenium-devtools-v110-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.1/selenium-devtools-v85-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.1/selenium-edge-driver-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.1/selenium-firefox-driver-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.1/selenium-http-4.8.1.jar:/Users/alexandra/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.1/selenium-ie-driver-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.1/selenium-remote-driver-4.8.1.jar:/Users/alexandra/.m2/repository/io/netty/netty-buffer/4.1.87.Final/netty-buffer-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-codec-http/4.1.87.Final/netty-codec-http-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-codec/4.1.87.Final/netty-codec-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-handler/4.1.87.Final/netty-handler-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-common/4.1.87.Final/netty-common-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.87.Final/netty-transport-classes-epoll-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.87.Final/netty-transport-classes-kqueue-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-native-epoll/4.1.87.Final/netty-transport-native-epoll-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.87.Final/netty-transport-native-kqueue-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.87.Final/netty-transport-native-unix-common-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport/4.1.87.Final/netty-transport-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-resolver/4.1.87.Final/netty-resolver-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-api/1.22.0/opentelemetry-api-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-context/1.22.0/opentelemetry-context-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.22.0/opentelemetry-exporter-logging-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.22.0/opentelemetry-sdk-metrics-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.22.0-alpha/opentelemetry-sdk-logs-1.22.0-alpha.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.22.0-alpha/opentelemetry-api-logs-1.22.0-alpha.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.22.0/opentelemetry-sdk-common-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.22.0/opentelemetry-sdk-extension-autoconfigure-spi-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.22.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.22.0-alpha.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.22.0/opentelemetry-sdk-trace-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.22.0/opentelemetry-sdk-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.22.0-alpha/opentelemetry-semconv-1.22.0-alpha.jar:/Users/alexandra/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/alexandra/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/alexandra/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/alexandra/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/alexandra/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/alexandra/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/alexandra/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/alexandra/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.1/selenium-manager-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.1/selenium-safari-driver-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.1/selenium-support-4.8.1.jar:/Users/alexandra/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.2/webdrivermanager-5.3.2.jar:/Users/alexandra/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/alexandra/.m2/repository/com/github/docker-java/docker-java/3.2.14/docker-java-3.2.14.jar:/Users/alexandra/.m2/repository/com/github/docker-java/docker-java-core/3.2.14/docker-java-core-3.2.14.jar:/Users/alexandra/.m2/repository/com/github/docker-java/docker-java-api/3.2.14/docker-java-api-3.2.14.jar:/Users/alexandra/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/alexandra/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/alexandra/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/alexandra/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/alexandra/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/alexandra/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/alexandra/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/alexandra/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/alexandra/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.14/docker-java-transport-httpclient5-3.2.14.jar:/Users/alexandra/.m2/repository/com/github/docker-java/docker-java-transport/3.2.14/docker-java-transport-3.2.14.jar:/Users/alexandra/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/alexandra/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/alexandra/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/alexandra/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/alexandra/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/alexandra/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/alexandra/.m2/repository/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar:/Users/alexandra/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/alexandra/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/alexandra/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/alexandra/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/alexandra/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/alexandra/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/alexandra/.m2/repository/io/qameta/allure/allure-testng/2.18.1/allure-testng-2.18.1.jar:/Users/alexandra/.m2/repository/io/qameta/allure/allure-java-commons/2.18.1/allure-java-commons-2.18.1.jar:/Users/alexandra/.m2/repository/io/qameta/allure/allure-model/2.18.1/allure-model-2.18.1.jar:/Users/alexandra/.m2/repository/io/qameta/allure/allure-test-filter/2.18.1/allure-test-filter-2.18.1.jar:/Users/alexandra/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/Users/alexandra/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.14.1/log4j-slf4j-impl-2.14.1.jar:/Users/alexandra/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/Users/alexandra/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Yerevan"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="AM"/>
+    <property name="sun.boot.library.path" value="/Users/alexandra/Library/Java/JavaVirtualMachines/openjdk-18.0.2/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/alexandra/IdeaProjects/Prestashop/target/surefire/surefirebooter-20230724231322079_3.jar /Users/alexandra/IdeaProjects/Prestashop/target/surefire 2023-07-24T23-13-21_927-jvmRun1 surefire-20230724231322079_1tmp surefire_0-20230724231322079_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/alexandra/IdeaProjects/Prestashop/target/test-classes:/Users/alexandra/IdeaProjects/Prestashop/target/classes:/Users/alexandra/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/alexandra/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/alexandra/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.1/selenium-java-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.1/selenium-api-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.1/selenium-chrome-driver-4.8.1.jar:/Users/alexandra/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/alexandra/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/alexandra/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/alexandra/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/alexandra/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/alexandra/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/alexandra/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/alexandra/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/alexandra/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/alexandra/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.1/selenium-chromium-driver-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.1/selenium-json-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v108/4.8.1/selenium-devtools-v108-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.1/selenium-devtools-v109-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.1/selenium-devtools-v110-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.1/selenium-devtools-v85-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.1/selenium-edge-driver-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.1/selenium-firefox-driver-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.1/selenium-http-4.8.1.jar:/Users/alexandra/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.1/selenium-ie-driver-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.1/selenium-remote-driver-4.8.1.jar:/Users/alexandra/.m2/repository/io/netty/netty-buffer/4.1.87.Final/netty-buffer-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-codec-http/4.1.87.Final/netty-codec-http-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-codec/4.1.87.Final/netty-codec-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-handler/4.1.87.Final/netty-handler-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-common/4.1.87.Final/netty-common-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.87.Final/netty-transport-classes-epoll-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.87.Final/netty-transport-classes-kqueue-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-native-epoll/4.1.87.Final/netty-transport-native-epoll-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.87.Final/netty-transport-native-kqueue-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.87.Final/netty-transport-native-unix-common-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport/4.1.87.Final/netty-transport-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-resolver/4.1.87.Final/netty-resolver-4.1.87.Final.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-api/1.22.0/opentelemetry-api-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-context/1.22.0/opentelemetry-context-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.22.0/opentelemetry-exporter-logging-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.22.0/opentelemetry-sdk-metrics-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.22.0-alpha/opentelemetry-sdk-logs-1.22.0-alpha.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.22.0-alpha/opentelemetry-api-logs-1.22.0-alpha.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.22.0/opentelemetry-sdk-common-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.22.0/opentelemetry-sdk-extension-autoconfigure-spi-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.22.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.22.0-alpha.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.22.0/opentelemetry-sdk-trace-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.22.0/opentelemetry-sdk-1.22.0.jar:/Users/alexandra/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.22.0-alpha/opentelemetry-semconv-1.22.0-alpha.jar:/Users/alexandra/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/alexandra/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/alexandra/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/alexandra/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/alexandra/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/alexandra/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/alexandra/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/alexandra/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/alexandra/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.1/selenium-manager-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.1/selenium-safari-driver-4.8.1.jar:/Users/alexandra/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.1/selenium-support-4.8.1.jar:/Users/alexandra/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.2/webdrivermanager-5.3.2.jar:/Users/alexandra/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/alexandra/.m2/repository/com/github/docker-java/docker-java/3.2.14/docker-java-3.2.14.jar:/Users/alexandra/.m2/repository/com/github/docker-java/docker-java-core/3.2.14/docker-java-core-3.2.14.jar:/Users/alexandra/.m2/repository/com/github/docker-java/docker-java-api/3.2.14/docker-java-api-3.2.14.jar:/Users/alexandra/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/alexandra/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/alexandra/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/alexandra/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/alexandra/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/alexandra/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/alexandra/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/alexandra/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/alexandra/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.14/docker-java-transport-httpclient5-3.2.14.jar:/Users/alexandra/.m2/repository/com/github/docker-java/docker-java-transport/3.2.14/docker-java-transport-3.2.14.jar:/Users/alexandra/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/alexandra/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/alexandra/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/alexandra/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/alexandra/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/alexandra/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/alexandra/.m2/repository/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar:/Users/alexandra/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/alexandra/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/alexandra/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/alexandra/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/alexandra/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/alexandra/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/alexandra/.m2/repository/io/qameta/allure/allure-testng/2.18.1/allure-testng-2.18.1.jar:/Users/alexandra/.m2/repository/io/qameta/allure/allure-java-commons/2.18.1/allure-java-commons-2.18.1.jar:/Users/alexandra/.m2/repository/io/qameta/allure/allure-model/2.18.1/allure-model-2.18.1.jar:/Users/alexandra/.m2/repository/io/qameta/allure/allure-test-filter/2.18.1/allure-test-filter-2.18.1.jar:/Users/alexandra/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/Users/alexandra/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.14.1/log4j-slf4j-impl-2.14.1.jar:/Users/alexandra/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/Users/alexandra/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar:"/>
+    <property name="allure.results.directory" value="/Users/alexandra/IdeaProjects/Prestashop/target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/alexandra"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-07-19"/>
+    <property name="java.home" value="/Users/alexandra/Library/Java/JavaVirtualMachines/openjdk-18.0.2/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/alexandra/IdeaProjects/Prestashop"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/alexandra/IdeaProjects/Prestashop/target/surefire/surefirebooter-20230724231322079_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="18.0.2+9-61"/>
+    <property name="user.name" value="alexandra"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.4.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/alexandra/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/f8/9zv0_j0s09bbf4mjbxhjf47w0000gn/T/"/>
+    <property name="idea.version" value="2022.1.3"/>
+    <property name="java.version" value="18.0.2"/>
+    <property name="user.dir" value="/Users/alexandra/IdeaProjects/Prestashop"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="webdriver.gecko.driver" value="/Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/alexandra/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="18.0.2+9-61"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="emptySearch" classname="by.teachmeskills.SearchTest" time="4.449">
+    <system-out><![CDATA[2023-07-24 23:13:23.548 INFO [TestNG-tests-2] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:13:23.548 INFO [TestNG-tests-1] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:13:23.784 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+2023-07-24 23:13:23.798 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as /Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver
+2023-07-24 23:13:24.971 ERROR [TestNG-tests-1] [io.github.bonigarcia.wdm.online.HttpClient] - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
+2023-07-24 23:13:24.971 WARN [TestNG-tests-1] [io.github.bonigarcia.wdm.versions.VersionDetector] - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
+2023-07-24 23:13:25.245 INFO [TestNG-tests-1] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.chrome.driver as /Users/alexandra/.cache/selenium/chromedriver/mac-arm64/114.0.5735.90/chromedriver
+================================= STARTING TEST emptySearch =================================
+================================= STARTING TEST loginValidUser =================================
+================================= FINISHED TEST emptySearch Duration: 4s ===================
+]]></system-out>
+    <system-err><![CDATA[1690226004117	geckodriver	INFO	Listening on 127.0.0.1:20852
+1690226004355	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... /[::1]:30647/" "-foreground" "-no-remote" "-profile" "/var/folders/f8/9zv0_j0s09bbf4mjbxhjf47w0000gn/T/rust_mozprofile4kZFBY"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690226004793	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"
+1690226004929	Marionette	INFO	Listening on port 56293
+WebDriver BiDi listening on ws://127.0.0.1:30647
+Read port: 56293
+1690226005114	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 18297
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:30647/devtools/browser/149cbb2b-2876-42aa-9de4-a3b15d881f09
+[1690226006.220][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+июл. 24, 2023 11:13:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 115
+июл. 24, 2023 11:13:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://prestashop.qatestlab.com.ua."
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+]]></system-err>
+  </testcase>
+  <testcase name="searchItemByFirstChr" classname="by.teachmeskills.SearchTest" time="1.507">
+    <system-out><![CDATA[2023-07-24 23:13:34.775 INFO [TestNG-tests-1] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:13:35.359 ERROR [TestNG-tests-1] [io.github.bonigarcia.wdm.online.HttpClient] - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
+2023-07-24 23:13:35.359 WARN [TestNG-tests-1] [io.github.bonigarcia.wdm.versions.VersionDetector] - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
+2023-07-24 23:13:35.651 INFO [TestNG-tests-1] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.chrome.driver as /Users/alexandra/.cache/selenium/chromedriver/mac-arm64/114.0.5735.90/chromedriver
+================================= STARTING TEST loginWithWrongEmail =================================
+================================= FINISHED TEST searchItemByFirstChr Duration: 4s ===================
+]]></system-out>
+    <system-err><![CDATA[JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 47799
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1690226016.493][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+июл. 24, 2023 11:13:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 115
+июл. 24, 2023 11:13:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+]]></system-err>
+  </testcase>
+  <testcase name="searchItemByFullName" classname="by.teachmeskills.SearchTest" time="0">
+    <skipped message="Element &lt;a class=&quot;product-name&quot; href=&quot;http://prestashop.qatestlab.com.ua/ru/casual-dresses/3-printed-dress.html?search_query=Printed&amp;results=13&quot;&gt; is not clickable at point (749,853) because another element &lt;html class=&quot;&quot;&gt; obscures it&#10;Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.4.1&apos;, java.version: &apos;18.0.2&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [f0d67b8c-50a4-4c3e-99a5-d15e78d372a6, clickElement {id=57ad9ff0-e5fe-44a2-bb7d-93668d1d4a2b}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:5923, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 66893, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:5923/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[FirefoxDriver: firefox on MAC (f0d67b8c-50a4-4c3e-99a5-d15e78d372a6)] -&gt; xpath: //h5[@itemprop=&apos;name&apos;]//a[@title=&apos;Printed Dress&apos;]]&#10;Session ID: f0d67b8c-50a4-4c3e-99a5-d15e78d372a6"/>
+    <system-out><![CDATA[2023-07-24 23:13:45.235 INFO [TestNG-tests-1] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:13:45.845 ERROR [TestNG-tests-1] [io.github.bonigarcia.wdm.online.HttpClient] - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
+2023-07-24 23:13:45.845 WARN [TestNG-tests-1] [io.github.bonigarcia.wdm.versions.VersionDetector] - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
+================================= SKIPPING TEST searchItemByFullName =================================
+]]></system-out>
+  </testcase>
+  <testcase name="searchItemByFullName" classname="by.teachmeskills.SearchTest" time="0">
+    <skipped message="Element &lt;a class=&quot;product-name&quot; href=&quot;http://prestashop.qatestlab.com.ua/ru/casual-dresses/3-printed-dress.html?search_query=Printed&amp;results=13&quot;&gt; is not clickable at point (749,853) because another element &lt;html class=&quot;&quot;&gt; obscures it&#10;Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.4.1&apos;, java.version: &apos;18.0.2&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [2da75547-6514-478a-8790-29236c19b3b1, clickElement {id=fc8cdd8c-5ea4-4b1a-a2da-a8dce6144aca}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:39400, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 66924, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:39400/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[FirefoxDriver: firefox on MAC (2da75547-6514-478a-8790-29236c19b3b1)] -&gt; xpath: //h5[@itemprop=&apos;name&apos;]//a[@title=&apos;Printed Dress&apos;]]&#10;Session ID: 2da75547-6514-478a-8790-29236c19b3b1"/>
+    <system-out><![CDATA[2023-07-24 23:13:46.130 INFO [TestNG-tests-1] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.chrome.driver as /Users/alexandra/.cache/selenium/chromedriver/mac-arm64/114.0.5735.90/chromedriver
+2023-07-24 23:13:46.632 INFO [TestNG-tests-2] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:13:46.636 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+2023-07-24 23:13:46.637 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as /Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver
+================================= STARTING TEST loginWithWrongPassword =================================
+================================= STARTING TEST searchItemByFullName =================================
+================================= SKIPPING TEST searchItemByFullName =================================
+]]></system-out>
+    <system-err><![CDATA[1690226025986	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:56508
+1690226025988	CDP	WARN	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1690226025989	Marionette	INFO	Stopped listening on port 56447
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 27569
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+1690226026644	geckodriver	INFO	Listening on 127.0.0.1:45097
+1690226026701	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... /[::1]:39400/" "-foreground" "-no-remote" "-profile" "/var/folders/f8/9zv0_j0s09bbf4mjbxhjf47w0000gn/T/rust_mozprofile60ubhH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[1690226026.904][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+июл. 24, 2023 11:13:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 115
+июл. 24, 2023 11:13:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+1690226027038	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"
+1690226027175	Marionette	INFO	Listening on port 56520
+Read port: 56520
+WebDriver BiDi listening on ws://127.0.0.1:39400
+1690226027337	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:39400/devtools/browser/f95efeaf-93e4-4d31-8c7c-01f51b1d3e1d
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://prestashop.qatestlab.com.ua."
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+]]></system-err>
+  </testcase>
+  <testcase name="searchItemByFullName" classname="by.teachmeskills.SearchTest" time="4.682">
+    <failure message="Element &lt;a class=&quot;product-name&quot; href=&quot;http://prestashop.qatestlab.com.ua/ru/casual-dresses/3-printed-dress.html?search_query=Printed&amp;results=13&quot;&gt; is not clickable at point (749,853) because another element &lt;html class=&quot;&quot;&gt; obscures it&#10;Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.4.1&apos;, java.version: &apos;18.0.2&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [45cf2cfc-9b9b-4779-8e45-111d32cfbcc6, clickElement {id=06677a33-51b5-448f-9a90-6fb6709db4d4}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:24215, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 66942, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:24215/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[FirefoxDriver: firefox on MAC (45cf2cfc-9b9b-4779-8e45-111d32cfbcc6)] -&gt; xpath: //h5[@itemprop=&apos;name&apos;]//a[@title=&apos;Printed Dress&apos;]]&#10;Session ID: 45cf2cfc-9b9b-4779-8e45-111d32cfbcc6" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+Element <a class="product-name" href="http://prestashop.qatestlab.com.ua/ru/casual-dresses/3-printed-dress.html?search_query=Printed&results=13"> is not clickable at point (749,853) because another element <html class=""> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [45cf2cfc-9b9b-4779-8e45-111d32cfbcc6, clickElement {id=06677a33-51b5-448f-9a90-6fb6709db4d4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:24215, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 66942, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:24215/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (45cf2cfc-9b9b-4779-8e45-111d32cfbcc6)] -> xpath: //h5[@itemprop='name']//a[@title='Printed Dress']]
+Session ID: 45cf2cfc-9b9b-4779-8e45-111d32cfbcc6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at by.teachmeskills.page.ProductsPage.searchByFullName(ProductsPage.java:89)
+	at by.teachmeskills.SearchTest.searchItemByFullName(SearchTest.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]></failure>
+    <system-out><![CDATA[2023-07-24 23:13:55.061 INFO [TestNG-tests-2] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:13:55.065 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+2023-07-24 23:13:55.067 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as /Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver
+2023-07-24 23:13:55.084 INFO [TestNG-tests-1] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:13:55.829 ERROR [TestNG-tests-1] [io.github.bonigarcia.wdm.online.HttpClient] - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
+2023-07-24 23:13:55.829 WARN [TestNG-tests-1] [io.github.bonigarcia.wdm.versions.VersionDetector] - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
+2023-07-24 23:13:56.118 INFO [TestNG-tests-1] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.chrome.driver as /Users/alexandra/.cache/selenium/chromedriver/mac-arm64/114.0.5735.90/chromedriver
+================================= STARTING TEST searchItemByFullName =================================
+================================= STARTING TEST loginWithoutData =================================
+================================= FAILED TEST searchItemByFullName Duration: 4s =================================
+Screenshot was not created because of error:
+Destination '/Users/alexandra/IdeaProjects/Prestashop/src/test/resources/screenshots/searchItemByFullName.png' already exists
+]]></system-out>
+    <system-err><![CDATA[1690226035073	geckodriver	INFO	Listening on 127.0.0.1:32958
+1690226035129	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... /[::1]:24215/" "-foreground" "-no-remote" "-profile" "/var/folders/f8/9zv0_j0s09bbf4mjbxhjf47w0000gn/T/rust_mozprofileONC4Kj"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690226035497	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"
+1690226035620	Marionette	INFO	Listening on port 56592
+Read port: 56592
+WebDriver BiDi listening on ws://127.0.0.1:24215
+1690226035821	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 19394
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:24215/devtools/browser/1a91d3db-7f28-464e-af28-2e4682069693
+[1690226036.903][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+июл. 24, 2023 11:13:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 115
+июл. 24, 2023 11:13:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://prestashop.qatestlab.com.ua."
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+]]></system-err>
+  </testcase>
+  <testcase name="wrongSearch" classname="by.teachmeskills.SearchTest" time="4.078">
+    <system-out><![CDATA[2023-07-24 23:14:02.659 INFO [TestNG-tests-2] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:14:02.662 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+2023-07-24 23:14:02.663 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as /Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver
+2023-07-24 23:14:02.668 INFO [TestNG-tests-1] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:14:03.268 ERROR [TestNG-tests-1] [io.github.bonigarcia.wdm.online.HttpClient] - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
+2023-07-24 23:14:03.268 WARN [TestNG-tests-1] [io.github.bonigarcia.wdm.versions.VersionDetector] - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
+2023-07-24 23:14:03.524 INFO [TestNG-tests-1] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.chrome.driver as /Users/alexandra/.cache/selenium/chromedriver/mac-arm64/114.0.5735.90/chromedriver
+================================= STARTING TEST wrongSearch =================================
+================================= STARTING TEST loginWithoutPassword =================================
+================================= FINISHED TEST wrongSearch Duration: 4s ===================
+]]></system-out>
+    <system-err><![CDATA[1690226042671	geckodriver	INFO	Listening on 127.0.0.1:10227
+1690226042726	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... /[::1]:33767/" "-foreground" "-no-remote" "-profile" "/var/folders/f8/9zv0_j0s09bbf4mjbxhjf47w0000gn/T/rust_mozprofilejbnYky"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690226043070	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"
+1690226043191	Marionette	INFO	Listening on port 56679
+Read port: 56679
+WebDriver BiDi listening on ws://127.0.0.1:33767
+1690226043319	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 16116
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:33767/devtools/browser/61608004-ff5e-4d8a-8b8a-1b238c9b2e62
+[1690226044.317][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+июл. 24, 2023 11:14:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 115
+июл. 24, 2023 11:14:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://prestashop.qatestlab.com.ua."
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+]]></system-err>
+  </testcase>
+  <testcase name="loginValidUser" classname="by.teachmeskills.LoginTest" time="0.843">
+    <system-out><![CDATA[2023-07-24 23:13:31.813 INFO [TestNG-tests-2] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:13:31.817 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+2023-07-24 23:13:31.819 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as /Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver
+================================= STARTING TEST searchItemByFirstChr =================================
+================================= FINISHED TEST loginValidUser Duration: 7s ===================
+]]></system-out>
+    <system-err><![CDATA[1690226011225	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:56366
+1690226011227	CDP	WARN	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1690226011233	Marionette	INFO	Stopped listening on port 56293
+1690226011826	geckodriver	INFO	Listening on 127.0.0.1:23690
+1690226011883	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... /[::1]:42049/" "-foreground" "-no-remote" "-profile" "/var/folders/f8/9zv0_j0s09bbf4mjbxhjf47w0000gn/T/rust_mozprofiletCpuv5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690226012204	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"
+1690226012330	Marionette	INFO	Listening on port 56371
+Read port: 56371
+WebDriver BiDi listening on ws://127.0.0.1:42049
+1690226012467	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:42049/devtools/browser/dcce6614-163e-4e20-8b2a-d3cfaeb6266a
+]]></system-err>
+  </testcase>
+  <testcase name="loginWithWrongEmail" classname="by.teachmeskills.LoginTest" time="4.15">
+    <system-out><![CDATA[2023-07-24 23:13:39.074 INFO [TestNG-tests-2] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:13:39.077 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+2023-07-24 23:13:39.079 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as /Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver
+================================= STARTING TEST searchItemByFullName =================================
+================================= FINISHED TEST loginWithWrongEmail Duration: 8s ===================
+]]></system-out>
+    <system-err><![CDATA[1690226018489	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:56438
+1690226018490	CDP	WARN	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1690226018492	Marionette	INFO	Stopped listening on port 56371
+1690226019086	geckodriver	INFO	Listening on 127.0.0.1:15457
+1690226019142	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... //[::1]:5923/" "-foreground" "-no-remote" "-profile" "/var/folders/f8/9zv0_j0s09bbf4mjbxhjf47w0000gn/T/rust_mozprofilejx5idW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690226019460	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"
+1690226019589	Marionette	INFO	Listening on port 56447
+Read port: 56447
+WebDriver BiDi listening on ws://127.0.0.1:5923
+1690226019722	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:5923/devtools/browser/babc154c-649c-4e0c-8923-d45fbb7b9ccb
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://prestashop.qatestlab.com.ua."
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+]]></system-err>
+  </testcase>
+  <testcase name="loginWithWrongPassword" classname="by.teachmeskills.LoginTest" time="6.295">
+    <system-out><![CDATA[================================= FINISHED TEST loginWithWrongPassword Duration: 7s ===================
+]]></system-out>
+    <system-err><![CDATA[1690226034451	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:56585
+1690226034453	CDP	WARN	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1690226034454	Marionette	INFO	Stopped listening on port 56520
+]]></system-err>
+  </testcase>
+  <testcase name="loginWithoutData" classname="by.teachmeskills.LoginTest" time="5.167">
+    <system-out><![CDATA[================================= FINISHED TEST loginWithoutData Duration: 5s ===================
+]]></system-out>
+    <system-err><![CDATA[1690226042070	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:56672
+1690226042072	CDP	WARN	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1690226042073	Marionette	INFO	Stopped listening on port 56592
+JavaScript error: resource://gre/modules/UrlClassifierListManager.sys.mjs, line 720: TypeError: this.tablesData[table] is undefined
+]]></system-err>
+  </testcase>
+  <testcase name="loginWithoutPassword" classname="by.teachmeskills.LoginTest" time="5.638">
+    <system-out><![CDATA[2023-07-24 23:14:09.463 INFO [TestNG-tests-2] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:14:09.466 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+2023-07-24 23:14:09.469 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as /Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver
+================================= FINISHED TEST loginWithoutPassword Duration: 5s ===================
+]]></system-out>
+    <system-err><![CDATA[1690226048883	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:56753
+1690226048884	CDP	WARN	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1690226048886	Marionette	INFO	Stopped listening on port 56679
+1690226049476	geckodriver	INFO	Listening on 127.0.0.1:27346
+1690226049534	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... /[::1]:40844/" "-foreground" "-no-remote" "-profile" "/var/folders/f8/9zv0_j0s09bbf4mjbxhjf47w0000gn/T/rust_mozprofileF7obN7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690226049850	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"
+1690226049971	Marionette	INFO	Listening on port 56758
+Read port: 56758
+WebDriver BiDi listening on ws://127.0.0.1:40844
+1690226050105	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+]]></system-err>
+  </testcase>
+  <testcase name="logoutTest" classname="by.teachmeskills.LoginTest" time="10.481">
+    <system-out><![CDATA[2023-07-24 23:14:22.712 INFO [TestNG-tests-2] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:14:22.715 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+2023-07-24 23:14:22.717 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as /Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver
+================================= FINISHED TEST logoutTest Duration: 10s ===================
+]]></system-out>
+    <system-err><![CDATA[1690226062228	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:56832
+1690226062230	CDP	WARN	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1690226062231	Marionette	INFO	Stopped listening on port 56758
+1690226062725	geckodriver	INFO	Listening on 127.0.0.1:29582
+1690226062779	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... /[::1]:11171/" "-foreground" "-no-remote" "-profile" "/var/folders/f8/9zv0_j0s09bbf4mjbxhjf47w0000gn/T/rust_mozprofilefWoCTz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690226063120	Marionette	INFO	Marionette enabled
+]]></system-err>
+  </testcase>
+  <testcase name="addAddress" classname="by.teachmeskills.AccountTest" time="9.547">
+    <failure message="Element &lt;select id=&quot;id_country&quot; class=&quot;form-control&quot; name=&quot;id_country&quot;&gt; is not clickable at point (468,851) because another element &lt;html class=&quot;&quot;&gt; obscures it&#10;Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.4.1&apos;, java.version: &apos;18.0.2&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [601e2be1-236e-40b5-be4c-c0f0dec2bbac, clickElement {id=3dbc077c-0cdd-4d00-bf9d-8a11d4912f8d}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:40844, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 67018, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:40844/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[FirefoxDriver: firefox on MAC (601e2be1-236e-40b5-be4c-c0f0dec2bbac)] -&gt; id: id_country]&#10;Session ID: 601e2be1-236e-40b5-be4c-c0f0dec2bbac" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+Element <select id="id_country" class="form-control" name="id_country"> is not clickable at point (468,851) because another element <html class=""> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [601e2be1-236e-40b5-be4c-c0f0dec2bbac, clickElement {id=3dbc077c-0cdd-4d00-bf9d-8a11d4912f8d}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:40844, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 67018, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:40844/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (601e2be1-236e-40b5-be4c-c0f0dec2bbac)] -> id: id_country]
+Session ID: 601e2be1-236e-40b5-be4c-c0f0dec2bbac
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at by.teachmeskills.page.AccountPage.addNewAddressWithRequiredFields(AccountPage.java:48)
+	at by.teachmeskills.AccountTest.addAddress(AccountTest.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]></failure>
+    <system-out><![CDATA[2023-07-24 23:14:10.552 INFO [TestNG-tests-1] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:14:11.160 ERROR [TestNG-tests-1] [io.github.bonigarcia.wdm.online.HttpClient] - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
+2023-07-24 23:14:11.160 WARN [TestNG-tests-1] [io.github.bonigarcia.wdm.versions.VersionDetector] - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
+================================= STARTING TEST addAddress =================================
+2023-07-24 23:14:11.450 INFO [TestNG-tests-1] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.chrome.driver as /Users/alexandra/.cache/selenium/chromedriver/mac-arm64/114.0.5735.90/chromedriver
+================================= STARTING TEST logoutTest =================================
+================================= FAILED TEST addAddress Duration: 10s =================================
+Screenshot was not created because of error:
+Destination '/Users/alexandra/IdeaProjects/Prestashop/src/test/resources/screenshots/addAddress.png' already exists
+]]></system-out>
+    <system-err><![CDATA[UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:40844/devtools/browser/57236919-0175-43f5-8f54-16604893b4c3
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 29970
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1690226052.197][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+июл. 24, 2023 11:14:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 115
+июл. 24, 2023 11:14:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://prestashop.qatestlab.com.ua."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://prestashop.qatestlab.com.ua."
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+]]></system-err>
+  </testcase>
+  <testcase name="checkedOrderHistory" classname="by.teachmeskills.AccountTest" time="9.161">
+    <system-out><![CDATA[2023-07-24 23:14:23.271 INFO [TestNG-tests-1] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:14:23.865 ERROR [TestNG-tests-1] [io.github.bonigarcia.wdm.online.HttpClient] - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
+2023-07-24 23:14:23.866 WARN [TestNG-tests-1] [io.github.bonigarcia.wdm.versions.VersionDetector] - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
+2023-07-24 23:14:24.169 INFO [TestNG-tests-1] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.chrome.driver as /Users/alexandra/.cache/selenium/chromedriver/mac-arm64/114.0.5735.90/chromedriver
+================================= STARTING TEST checkedOrderHistory =================================
+================================= STARTING TEST checkedAddingItemToCart =================================
+2023-07-24 23:14:25.416 INFO [TestNG-tests-1] [by.teachmeskills.BaseTest] - What is the name of item: Dress
+================================= FINISHED TEST checkedOrderHistory Duration: 9s ===================
+]]></system-out>
+    <system-err><![CDATA[console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"
+1690226063254	Marionette	INFO	Listening on port 56835
+Read port: 56835
+WebDriver BiDi listening on ws://127.0.0.1:11171
+1690226063392	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 43510
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+DevTools listening on ws://127.0.0.1:11171/devtools/browser/009e81bd-c637-4e30-9844-f90e38971664
+[1690226064.933][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+июл. 24, 2023 11:14:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 115
+июл. 24, 2023 11:14:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://prestashop.qatestlab.com.ua."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://prestashop.qatestlab.com.ua."
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+]]></system-err>
+  </testcase>
+  <testcase name="deleteAddress" classname="by.teachmeskills.AccountTest" time="8.654">
+    <failure message="Element &lt;select id=&quot;id_country&quot; class=&quot;form-control&quot; name=&quot;id_country&quot;&gt; is not clickable at point (468,851) because another element &lt;html class=&quot;&quot;&gt; obscures it&#10;Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.4.1&apos;, java.version: &apos;18.0.2&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [7df27232-ff22-44da-811b-ce35c956e3d6, clickElement {id=77c59ef8-9daa-4584-b81e-e0870ce2b5f2}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:28244, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 67097, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:28244/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[FirefoxDriver: firefox on MAC (7df27232-ff22-44da-811b-ce35c956e3d6)] -&gt; id: id_country]&#10;Session ID: 7df27232-ff22-44da-811b-ce35c956e3d6" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+Element <select id="id_country" class="form-control" name="id_country"> is not clickable at point (468,851) because another element <html class=""> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7df27232-ff22-44da-811b-ce35c956e3d6, clickElement {id=77c59ef8-9daa-4584-b81e-e0870ce2b5f2}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:28244, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.5.0, moz:processID: 67097, moz:profile: /var/folders/f8/9zv0_j0s09b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:28244/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (7df27232-ff22-44da-811b-ce35c956e3d6)] -> id: id_country]
+Session ID: 7df27232-ff22-44da-811b-ce35c956e3d6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at by.teachmeskills.page.AccountPage.addNewAddressWithRequiredFields(AccountPage.java:48)
+	at by.teachmeskills.AccountTest.deleteAddress(AccountTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]></failure>
+    <system-out><![CDATA[2023-07-24 23:14:43.967 INFO [TestNG-tests-1] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:14:44.698 ERROR [TestNG-tests-1] [io.github.bonigarcia.wdm.online.HttpClient] - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
+2023-07-24 23:14:44.699 WARN [TestNG-tests-1] [io.github.bonigarcia.wdm.versions.VersionDetector] - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
+2023-07-24 23:14:44.988 INFO [TestNG-tests-1] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.chrome.driver as /Users/alexandra/.cache/selenium/chromedriver/mac-arm64/114.0.5735.90/chromedriver
+================================= FAILED TEST deleteAddress Duration: 8s =================================
+Screenshot was not created because of error:
+Destination '/Users/alexandra/IdeaProjects/Prestashop/src/test/resources/screenshots/deleteAddress.png' already exists
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 19481
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+]]></system-err>
+  </testcase>
+  <testcase name="checkedAddingItemToCart" classname="by.teachmeskills.CartTest" time="6.795">
+    <system-out><![CDATA[2023-07-24 23:14:35.065 INFO [TestNG-tests-2] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:14:35.068 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+2023-07-24 23:14:35.070 INFO [TestNG-tests-2] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as /Users/alexandra/.cache/selenium/geckodriver/mac-arm64/0.33.0/geckodriver
+================================= STARTING TEST deleteAddress =================================
+================================= FINISHED TEST checkedAddingItemToCart Duration: 18s ===================
+]]></system-out>
+    <system-err><![CDATA[1690226074578	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:56908
+1690226074579	CDP	WARN	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1690226074581	Marionette	INFO	Stopped listening on port 56835
+1690226075077	geckodriver	INFO	Listening on 127.0.0.1:48538
+1690226075141	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... /[::1]:28244/" "-foreground" "-no-remote" "-profile" "/var/folders/f8/9zv0_j0s09bbf4mjbxhjf47w0000gn/T/rust_mozprofileIgnzjc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690226075461	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"
+1690226075589	Marionette	INFO	Listening on port 56914
+Read port: 56914
+WebDriver BiDi listening on ws://127.0.0.1:28244
+1690226075725	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:28244/devtools/browser/1a16909c-ebd5-42b9-88c1-76380e18aa4f
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://prestashop.qatestlab.com.ua."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://prestashop.qatestlab.com.ua."
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+JavaScript error: http://prestashop.qatestlab.com.ua/js/jquery/jquery-1.11.0.min.js, line 6: ReferenceError: MathCalculate is not defined
+]]></system-err>
+  </testcase>
+  <testcase name="payByBankWire" classname="by.teachmeskills.CartTest" time="32.222">
+    <system-out><![CDATA[================================= STARTING TEST payByBankWire =================================
+2023-07-24 23:14:46.290 INFO [TestNG-tests-1] [by.teachmeskills.BaseTest] - What is the name of product: Printed Dress
+================================= FINISHED TEST payByBankWire Duration: 32s ===================
+]]></system-out>
+    <system-err><![CDATA[1690226085724	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:56981
+1690226085725	CDP	WARN	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1690226085727	Marionette	INFO	Stopped listening on port 56914
+[1690226085.807][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+июл. 24, 2023 11:14:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 115
+июл. 24, 2023 11:14:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="payByCheck" classname="by.teachmeskills.CartTest" time="33.603">
+    <system-out><![CDATA[2023-07-24 23:15:18.623 INFO [TestNG-tests-1] [by.teachmeskills.BaseTest] - The parameter isHeadless is set as null
+2023-07-24 23:15:19.371 ERROR [TestNG-tests-1] [io.github.bonigarcia.wdm.online.HttpClient] - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
+2023-07-24 23:15:19.372 WARN [TestNG-tests-1] [io.github.bonigarcia.wdm.versions.VersionDetector] - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
+2023-07-24 23:15:19.811 INFO [TestNG-tests-1] [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.chrome.driver as /Users/alexandra/.cache/selenium/chromedriver/mac-arm64/114.0.5735.90/chromedriver
+================================= STARTING TEST payByCheck =================================
+2023-07-24 23:15:21.312 INFO [TestNG-tests-1] [by.teachmeskills.BaseTest] - What is the name of product: Printed Dress
+================================= FINISHED TEST payByCheck Duration: 33s ===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 31864
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1690226120.632][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+июл. 24, 2023 11:15:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 115
+июл. 24, 2023 11:15:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

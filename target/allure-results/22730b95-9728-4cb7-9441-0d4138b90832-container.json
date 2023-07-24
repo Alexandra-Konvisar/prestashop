@@ -1,0 +1,1 @@
+{"uuid":"22730b95-9728-4cb7-9441-0d4138b90832","name":"by.teachmeskills.BaseTest.setUp","children":["d3213aab-ccb7-41ee-89b8-1154b3810399"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1690225036476,"stop":1690225038571}],"afters":[],"start":1690225036476,"stop":1690225038571}
